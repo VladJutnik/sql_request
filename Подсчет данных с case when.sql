@@ -1,0 +1,1 @@
+SELECT COUNT(*) AS `count_total`, count( case when field1_1 = 2 then 1 else NULL end) as `9_10_age`, count( case when field1_1 = 5 then 1 else NULL end) as `13_14_age`, count( case when field1_1 = 10 then 1 else NULL end) as `15_17_age` FROM `deti_anket` WHERE (`organization_id`=4543) AND (`year`='2023')

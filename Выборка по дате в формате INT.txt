@@ -1,0 +1,8 @@
+SELECT 
+	* 
+FROM `medicals` 
+inner join kids on medicals.kids_id = kids.id 
+inner join organization on kids.organization_id = organization.id 
+inner join type_lager on organization.type_lager_id = type_lager.id
+
+WHERE CONVERT(FROM_UNIXTIME(medicals.date), DATETIME) BETWEEN '2020-07-14' and '2020-07-15';

@@ -1,0 +1,1 @@
+SELECT id, email,`year`, id, COUNT(*) as count FROM organization Where `year` = 2023 GROUP BY email HAVING COUNT > 1

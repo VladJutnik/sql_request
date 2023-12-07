@@ -1,0 +1,1 @@
+SELECT login, organization_id, COUNT(*) as count FROM user GROUP BY login  HAVING COUNT > 1
